@@ -1,15 +1,15 @@
-﻿using Bloggie.Web.Models.Domain;
-using Microsoft.EntityFrameworkCore;
+﻿    using Bloggie.Web.Models.Domain;
+    using Microsoft.EntityFrameworkCore;
 
-namespace Bloggie.Web.Data
-{
-    public class BloggieDbContext : DbContext
+    namespace Bloggie.Web.Data
     {
-        public BloggieDbContext(DbContextOptions options) : base(options)
+        public class BloggieDbContext : DbContext
         {
-        }
+            public BloggieDbContext(DbContextOptions options) : base(options)
+            {
+            }
 
-        public DbSet<BlogPost> BlogPosts { get; set; }
-        public DbSet<Tag> Tags { get; set; }
+            public DbSet<BlogPost> BlogPosts { get; set; }
+            public DbSet<Tag> Tags { get; set; }
+        }
     }
-}
