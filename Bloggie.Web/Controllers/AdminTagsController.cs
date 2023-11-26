@@ -4,7 +4,8 @@ namespace Bloggie.Web.Controllers
 {
     public class AdminTagsController : Controller
     {
-        public IActionResult Index()
+        [HttpGet]
+        public IActionResult Add()
         {
             return View();
         }
