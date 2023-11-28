@@ -26,6 +26,13 @@ namespace Bloggie.Web.Controllers
         public IActionResult Add(AddTagRequest addTagRequest)
         {
 
+            var tag = new Tag
+            {
+                Name = addTagRequest.Name,
+                DisplayName = addTagRequest.DisplayName
+            };
+            bloggieDbContext.Add(tag);
+            bloggieDbContext.SaveChanges();
             return View("Add");
         }
     }
