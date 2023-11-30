@@ -1,7 +1,10 @@
 #  Blog de notícias
 
 ### Descrição
-Aqui é criado uma introdução ao Crud para aprendizado, principalmente das funcionalidades básicas do Visual Studio, um projeto MVC mais completo será criado a seguir
+Projeto de introdução ao MVC com ASP.NET incluindo algumas funcionalidades de CRUD e conexão com banco de dados para aprendizado das funcionalidades básicas do Visual Studio e das particularidades do Entity Framework.
 
 #### Tecnologias
-...
+* C#
+* ASP.NET
+* Entity Framework
+* SQL SERVER
